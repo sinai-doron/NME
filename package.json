@@ -1,9 +1,9 @@
 {
-  "name": "pabulum",
-  "version": "0.0.31",
-  "title": "Pabulum - Beta",
-  "description": "Pabulum",
-  "repository": "https://github.com/PandaHosi/Pabulum",
+  "name": "NME",
+  "version": "0.1",
+  "title": "NME",
+  "description": "Test mongoose",
+  "repository": "https://github.com/sinai-doron/NME.git",
   "dependencies": {
     "mongoose": "^3.8.11"
   },
@@ -28,9 +28,7 @@
   },
   "engine": "node >= 1.4.3",
   "scripts": {
-    "test": "qtest",
-    "start": "node server/server.js"
+
   },
-  "author": "Doron Sinai (sinai.doron@gmail.com) & Pini Houri (pinhasph@gmail.com)",
-  "license": "BSD-2-Clause"
+  "author": "Doron Sinai"
 }
