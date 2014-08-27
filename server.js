@@ -10,3 +10,12 @@ db.once('open', function() {
 });
 
 mongoose.connect('mongodb://localhost/test');
+
+var http = require('http');
+
+http.createServer(function(req,res){
+	res.writeHead(200, { 'Content-Type' : 'text/plain'});
+	res.end('Server is online!')
+}).listen(44444);
+
+console.log('Server is online');
