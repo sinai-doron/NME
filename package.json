@@ -1,0 +1,36 @@
+{
+  "name": "pabulum",
+  "version": "0.0.31",
+  "title": "Pabulum - Beta",
+  "description": "Pabulum",
+  "repository": "https://github.com/PandaHosi/Pabulum",
+  "dependencies": {
+    "mongoose": "^3.8.11"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-nodeunit": "^0.3.3",
+    "grunt-contrib-uglify": "^0.5.1",
+    "grunt-contrib-compass": "^0.7.2",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-autoprefixer": "^0.7.2",
+    "grunt-contrib-concat": "^0.4.0",
+    "grunt-concat-css": "^0.3.1",
+    "grunt-html2js": "^0.2.5",
+    "grunt-contrib-cssmin": "^0.10.0",
+    "grunt-protractor-runner": "",
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-contrib-copy": "^0.5.0",
+    "grunt-sails-linker": "^0.9.5",
+    "grunt-bump": "0.0.15",
+    "grunt-available-tasks": "^0.5.0"
+  },
+  "engine": "node >= 1.4.3",
+  "scripts": {
+    "test": "qtest",
+    "start": "node server/server.js"
+  },
+  "author": "Doron Sinai (sinai.doron@gmail.com) & Pini Houri (pinhasph@gmail.com)",
+  "license": "BSD-2-Clause"
+}
