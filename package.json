@@ -5,7 +5,8 @@
   "description": "Test mongoose",
   "repository": "https://github.com/sinai-doron/NME.git",
   "dependencies": {
-    "mongoose": "^3.8.11"
+    "mongoose": "^3.8.11",
+    "express":""
   },
   "devDependencies": {
     "grunt": "^0.4.5",
