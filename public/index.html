@@ -1,8 +1,38 @@
+<!DOCTYPE html>
 <html>
 <head>
-<title>Hello world</title>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+  .container {
+    background:green;
+    display: table;
+    height: calc(100% - 40px);
+    width: 100%;
+  }
+  .contents {
+    background: purple;
+    display: table-cell;
+    width: 20%;
+  }
+</style>
 </head>
 <body>
-<p>Hi!</p>
+<div class="container">
+  <div style="display: table-cell; background:yellow;">
+
+    <div style="background: blue; height:3000px;">Some more contents
+    </div>
+    <div>Hello</div>
+
+  </div>
+  <div class="contents"></div>
+</div>
+<div style="height:40px; width: 100%; background: darkcyan;">Footer</div>
 </body>
 </html>
