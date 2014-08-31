@@ -31,7 +31,7 @@ mongoose.connect('mongodb://localhost/test');
 
 setInterval(function(){
 	console.log('I am a live');
-}, 60000);
+}, 69000);
 
 
 http.createServer(function(req,res){
