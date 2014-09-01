@@ -6,6 +6,7 @@ var app = express();
 
 app.engine('handlebars',handlebars.engine);
 app.set('view engine', 'handlebars');
+app.disable('x-powered-by');
 
 app.set('port', process.env.PORT || 5555);
 
@@ -18,6 +19,20 @@ app.get('/', function(req, res) {
 app.get('/about', function(req, res){
         res.type('text/plain');
         res.send('About Meadowlark Travel');
+});
+
+app.get('/json',function(req,res){
+	res.json(500, {'this':'that'});
+});
+
+app.get('/headers', function(req,res){
+	res.type('text/plain');
+	var s = '';
+	for(var name in req.headers){
+		s += name + ':' + req.headers[name] + '\n';
+	}
+	console.log(req.ip + "*******");
+	res.send(s);
 });
 
 app.use(function(req,res){
